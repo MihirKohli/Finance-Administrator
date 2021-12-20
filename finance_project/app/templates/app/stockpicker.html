@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="{% static '/css/stocks.css' %}" rel="stylesheet">
+<div class="stockContainer">
+    <div class="container">
+        <h1>Live Stock Tracker</h1>
+        <form action="/stocktracker">
+            <div class="selection">
+
+                <select class="form-select form-select-lg mb-3" multiple aria-label="multiple select example"
+                    name="stockpicker">
+                    {% for i in stockpicker %}
+                    <option value="{{i}}">{{i}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <br>
+            <div class="d-grid gap-2">
+                <input class="btn btn-primary" type="submit" value="Check Stocks">
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static '/css/dashboard.css' %}" rel="stylesheet">
+<div class="charts">
+    <div class="visual">
+        <div id="myChart"></div>
+    </div>
+    <div class="visual2">
+        <div id="myArea"></div>
+    </div>
+    <script>
+
+        var state = {
+            'items': [],
+            'values': [],
+        }
+        var dataURL = `/resultsData/`
+        $.ajax({
+            method: 'GET',
+            url: dataURL,
+            success: function (response) {
+                console.log('RESPONSE:', response)
+
+                for (var i in response) {
+                    var key = Object.keys(response[i])[0]
+                    var value = Object.values(response[i])[0]
+
+                    state.items.push(key)
+                    state.values.push(value)
+                }
+                buildChart()
+                buildArea()
+            }
+        })
+
+        function buildChart() {
+
+            var chartData = {
+                "type": "bar",
+                "scale-x": {
+                    "values": state.items
+                },
+                "series": [
+                    {
+                        "values": state.values
+                    }
+                ]
+            }
+
+
+            zingchart.render({
+                id: "myChart",
+                data: chartData,
+            });
+
+        }
+
+        function buildArea() {
+
+            var chartData = {
+                "type": "area",
+                "scale-x": {
+                    "values": state.items
+                },
+                "series": [
+                    {
+                        "values": state.values
+                    }
+                ]
+            }
+
+
+            zingchart.render({
+                id: "myArea",
+                data: chartData,
+            });
+
+        }
+    </script>
+
+
+
+</div>
+</div>
+{% endblock %}

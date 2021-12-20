@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static '/css/form.css' %}" rel="stylesheet">
+<div class="formBody">
+    <h1>Enter your portfolio details</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>
+            {{form.Field}}
+            <span>Field</span>
+        </label>
+        <label>
+            {{form.Amount}}
+            <span>Amount</span>
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

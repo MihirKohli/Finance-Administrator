@@ -1,0 +1,152 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static '/css/home.css' %}" rel="stylesheet">
+
+
+
+<div class="page-top">
+    <!-- Navigation-->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    <!-- Header-->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">
+                    <div class="text">
+                        <script src="js/home.js"></script>
+                    </div>
+                </h1>
+                <!-- <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2> -->
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/img/01.jpg' %}" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">For those about to invest...</h2>
+                        <p>The goal of investing is to put your money to work in one or more types and let it grow over
+                            time.
+                            Get all the stocks at your disposal, and decide for yourself when and where to invest.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 2-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/img/02.jpg' %}" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">Assist your portfolio</h2>
+                        <p>Portfolio management refers to managing an individual’s investments in the form of income,
+                            stocks, expense, mortgage etc. Our iteration of portfolio management incorporates visual
+                            representation which offers better interpretation of data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 3-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/img/03.jpg' %}" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Manage your mortgage</h2>
+                        <p>Use our dedicated realtime visual loan calulator and get better insights on duration,
+                            interests etc. Calculate EMI for home loan, car loan, personal loan, education loan or any
+                            other
+                            fully
+                            amortizing loan using this
+                            calculator.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/img/04.jpg' %}" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">Track currencies</h2>
+                        <p>Currency Converter allows you to check the latest foreign exchange rates and
+                            convert all major
+                            world currencies. Feel free to use our currency converter feature to convert currencies on
+                            the go. It even works for external users
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/img/05.jpg' %}" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Don't have a portfolio? Create now </h2>
+                        <p>We got you all covered with our secure, login based portfolio management system. Here, no one
+                            can see your data except
+                            you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <!-- <footer class="py-5 bg-black">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white small">Copyright @Finance Administrator inc 2021</p>
+        </div>
+    </footer> -->
+    <!-- Bootstrap core JS-->
+    <!-- Core theme JS-->
+</div>
+
+{% endblock %}
