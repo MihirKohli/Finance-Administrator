@@ -1,0 +1,114 @@
+.currencyBody {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  height: 100vh;
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  margin: 0;
+  padding: 0;
+}
+
+.currencyContainer {
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  margin-top: 10vh;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000000;
+  opacity: 1;
+  text-align: center;
+  align-content: center;
+}
+
+.currency {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.currency select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  color: #0e3114;
+  width: 80px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.currency input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: transparent;
+  color: #192c1e;
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  padding: 2px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.currency select option {
+  background-color: #89c095;
+  font-size: 1rem;
+  color: rgb(20, 41, 26);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#exchange {
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #213a25;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0.3rem;
+  border: none;
+  /* border: 2px solid #000;*/
+  border-radius: 50%;
+}
+
+button#exchange:hover {
+  color: #213a25;
+  background-color: #569456;
+  border: none;
+  border-radius: 50%;
+}
+
+button#exchange:active {
+}
+
+.rate {
+  color: #5f2419;
+  width: 500px;
+  height: 35px;
+  border-radius: 15px;
+  border-radius: 35px;
+  margin-top: 80px;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}

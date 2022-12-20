@@ -1,0 +1,20 @@
+.selection {
+  margin-top: 6%;
+  font-family: Helvetica;
+}
+
+select>option {
+  height: 70px;
+}
+
+h1 {
+  margin-top: 6%;
+  font-size: 35px;
+  color: white;
+  font-family: Helvetica;
+}
+
+.stockContainer {
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  height: 100vh;
+}

@@ -1,0 +1,187 @@
+.body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #25c481, #25b7c4);
+}
+
+.container {
+  height: auto;
+  width: 1000px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px 0;
+  background-image: linear-gradient(to bottom left, #e4dfec, white, white);
+}
+.sub-container {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  height: max-content;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header button {
+  height: max-content;
+  width: max-content;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+  color: #9088d2;
+}
+
+.header button:hover {
+  cursor: pointer;
+}
+
+.view,
+.breakup {
+  width: 50%;
+}
+.details input {
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----- Styling the sliders ----*/
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #b3b3b3;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #9088d2;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  border-radius: 10px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #9088d2;
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #9088d2;
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+  border: 5px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #9088d2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #9088d2;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #9088d2;
+}
+
+/*-------------------------------------*/
+#price {
+  color: #130f31;
+  font-size: 25px;
+}
+
+.loan-details {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#price-container {
+  color: #9088d2;
+  margin-top: 50px;
+}
+
+#price-container::before {
+  content: "Monthly Payable:";
+  font-size: 12px;
+  display: block;
+}
