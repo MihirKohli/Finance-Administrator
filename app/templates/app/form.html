@@ -4,7 +4,7 @@
 <link href="{% static '/css/form.css' %}" rel="stylesheet">
 <div class="formBody">
     <h1>Enter your portfolio details</h1>
-    <form method="post">
+    <form method="post" action="">
         {% csrf_token %}
         <label>
             {{form.Field}}

@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-mzw^vkbmo9rrx_9!hk85vam9w1_9^qbpy6h!gvp1cw(&f_u0#t
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['*','https://finance-administrator.up.railway.app']
 
 
 # Application definition
